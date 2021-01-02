@@ -7,6 +7,10 @@ Gatsby plugin for Heap Analytics.
 ```sh
 yarn add gatsby-plugin-heap
 ```
+or
+```sh
+npm install gatsby-plugin-heap
+```
 
 ## Usage
 
@@ -22,3 +26,10 @@ plugins: [
   },
 ],
 ```
+
+## Heap App ID
+
+You can find your ID in Account --> Manage --> Projects --> Environments.
+
+If you made a new Heap account for your Gatsby project, sometimes you can't see your account management until after the installation step. If this is the case, Heap will have a code snippit it wants you to paste into the `</head>` tag. You do not need to paste the code snippet anywhere with this plugin. Your App ID is a unique string in that snippet. Once you add it to the plugin and run `gatsby develop`, refresh the Heap page to see your data and complete the installation process. 
+
